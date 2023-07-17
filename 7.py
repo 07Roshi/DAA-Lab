@@ -19,7 +19,7 @@ def calculate_optimal_cost(drill_order,distances):
     total_cost=sum(distances[(drill_order[i],drill_order[i+1])] for i in range(len(drill_order)-1))
     return total_cost
 
-if __name__ == " main ":
+if __name__ == "__main__":
     while True:
         num_nodes = int(input("Enter th enumber of drill holes(nodes): "))
         distances = get_distances(num_nodes)
